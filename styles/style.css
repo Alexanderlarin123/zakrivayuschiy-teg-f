@@ -11,10 +11,27 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font, Arial);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-attachment: fixed;
+  background-image: var(--cover-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:var(--accent-color);
+  background-color: var(--bg-color);
+  font-variation-settings:'wdth' var(--wdth), 'wgth' var(--wgth);
 }
+
+.header{
+  font-family: var(--accent-font, sans-serif);
+}
+
