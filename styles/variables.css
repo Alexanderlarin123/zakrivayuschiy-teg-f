@@ -7,6 +7,6 @@
     linear-gradient(#e7e7e7,#1a1a1a);
     --bg-color: rgba(255, 255, 255, 1);
     --accent-color:rgba(0, 0, 0, 1);
-    --card-title-font-weight:400;
-    --card-paragraph-font-weight:700;
+    --card-title-font-weight:700;
+    --card-paragraph-font-weight:400;
 }
