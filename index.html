@@ -59,19 +59,22 @@
           Место для ваших воспоминаний о начале обучения.
         </p>
         <div class="content__card-like">
-          <img class="content__card-like-animation" src="/images/heart.png" alt="heart">
-          <button class="content__card-like-button">
-          Like
+          <butom class="card__icon-button">
+            <img class="like-icon" src="/images/heart.png" alt="heart">
+          </butom>
+          <button class="card__like-button">
+            <p class="button__text">
+              Like
+            </p>
           </button>
         </div>
 
       </article>
-
     </main>
     <footer class="footer">
       <button class="footer__button"
       type="button"
-      onclick="window['dialog-id'].showModal();"
+      onclick="window['dialog-id'].showModal()"
       aria-controls="dialog-id">
       <svg width="28" height="28" viewBox="0 0 39 39">
         <use href="#floppy">
@@ -80,14 +83,18 @@
      </button>
 
      <dialog id="dialog-id">
+      <div class="dialog">
       <div class="dialog__info">
-         <svg width="28" height="28" viewBox="0 0 39 39">
+         <svg width="39" height="39" viewBox="0 0 39 39">
            <use href="#floppy">
          </svg>
-         <p class="dialog__paragraph">Вставьте
-        дискету, чтобы продолжить</p>
+         <p class="dialog__paragraph">Вставьте<br>
+        дискету, чтобы <br> продолжить</p>
       </div>
-      <button type="button">OK</button>
+      <form>
+        <button type="submit" class="save__button">OK</button>
+      <form>
+      </div>
     </dialog>
 
     </footer>
