@@ -126,6 +126,7 @@ transition: width 0.5s;
   width:100%;
   font-size: var(--main-font-size);
   padding:5px;
+  font-weight: var(--card-title-font-weight) ;
 }
 .content__card-image {
  width:100%;
@@ -135,6 +136,7 @@ transition: width 0.5s;
   width:100%;
   font-size: var(--main-font-size);
   padding:25px;
+  font-weight: var(--card-paragraph-font-weight);
 }
 
 .content__card-like {
@@ -151,19 +153,23 @@ transition: width 0.5s;
 }
 
 .card__like-button{
-  position:relative;
+position:relative;
 min-width:130px;
 min-height:38px;
 border: 2px solid var(--accent-color);
 background-color: var(--bg-color);
+font-family: var(--accent-font);
+font-size:14px;
+font-weight: 400;
+transition: color 0.5s;
+z-index:0;
 }
 .card__like-button:hover{
   cursor:pointer;
-  color:var(--bg-color);
-  z-index: 0;
+  color:var(--bg-color); 
 }
 
-.card__like-button::before{
+.card__like-button::after{
   content: '';
   display: block;
   position:absolute;
@@ -176,7 +182,7 @@ background-color: var(--bg-color);
   z-index:-1;
   
 }
-.card__like-button:hover::before{
+.card__like-button:hover::after{
   width: 100%;
 }
 

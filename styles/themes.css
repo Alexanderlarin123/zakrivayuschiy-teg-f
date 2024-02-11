@@ -10,8 +10,8 @@ repeating-linear-gradient(90deg, #000,#000 2px, rgba(0,0,0,0) 2px,rgba(0,0,0,0) 
 linear-gradient(#007f0c, #004306);
 --bg-color:rgba(0, 0, 0, 1);
 --accent-color:rgba(0, 204, 20, 1);
---card-title-font-weight:465;
---card-paragraph-font-weight:785;
+--card-title-font-weight:785;
+--card-paragraph-font-weight:465;
 
 }
 
@@ -21,6 +21,6 @@ linear-gradient(#007f0c, #004306);
  linear-gradient(to bottom,#e7e7e7 0.01%,#1a1a1a);
  --bg-color:rgba(255, 255, 255, 1);
  --accent-color:rgba(0, 0, 0, 1);
- --card-title-font-weight:400;
- --card-paragraph-font-weight:700;
+ --card-title-font-weight:700;
+ --card-paragraph-font-weight:400;
 }
