@@ -234,6 +234,14 @@ z-index:0;
   fill:var(--heart-fill);
 }
 
+.like-icon.is-liked:hover .main-body{
+  fill: var(--heart-fill);
+}
+
+.like-icon.is-liked:hover .core{
+  fill: var(--heart-fill);
+}
+
 .like-icon:hover{
   cursor:pointer;
 }
