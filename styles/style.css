@@ -222,8 +222,16 @@ z-index:0;
 
 
 
-.like-icon {
- 
+.like-icon.is-liked .main-body {
+  fill:var(--heart-fill);
+}
+
+.like-icon.is-liked .core {
+  fill:var(--heart-fill);
+}
+
+.like-icon.is-liked .contour {
+  fill:var(--heart-fill);
 }
 
 .like-icon:hover{
@@ -248,7 +256,7 @@ z-index:0;
   transition-delay: 0.03s;
 }
 .like-icon:hover .core{
-  fill: var(--accent-color);
+  fill: var(--heart-contour);
   transition-delay: 0s;
 }
 
@@ -259,7 +267,7 @@ z-index:0;
   transition-delay:0s;
 }
 .like-icon:hover .main-body{
-  fill: var(--accent-color);
+  fill: var(--heart-contour);
   transition-delay: 0.05s;
 }
 
