@@ -220,8 +220,16 @@ z-index:0;
   border: 2px solid var(--accent-color);
 }
 
-.card__icon   -button:hover{
+.card__icon-button:hover{
   cursor:pointer;
+}
+
+.like-icon {
+ 
+}
+
+.sparks{
+  opacity: 0%;
 }
 
 .card__like-button:hover{

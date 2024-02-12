@@ -11,4 +11,7 @@
     --card-paragraph-font-weight:400;
     --content-width:clamp(375px, 100%, 700px);
     --main-font-size:18px;
+    --heart-contour: rgba(0, 0, 0, 1);
+    --heart-fill:rgba(255, 0, 0, 1);
+
 }

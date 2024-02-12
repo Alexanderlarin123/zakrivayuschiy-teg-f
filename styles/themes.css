@@ -12,6 +12,8 @@ linear-gradient(#007f0c, #004306);
 --accent-color:rgba(0, 204, 20, 1);
 --card-title-font-weight:785;
 --card-paragraph-font-weight:465;
+--heart-contour: rgba(0, 204, 20, 1);
+--heart-fill:rgba(255, 0, 0, 1);
 
 }
 
@@ -23,4 +25,6 @@ linear-gradient(#007f0c, #004306);
  --accent-color:rgba(0, 0, 0, 1);
  --card-title-font-weight:700;
  --card-paragraph-font-weight:400;
+ --heart-contour: rgba(0, 0, 0, 1);
+ --heart-fill:rgba(255, 0, 0, 1);
 }
