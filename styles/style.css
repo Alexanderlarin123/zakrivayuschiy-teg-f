@@ -201,9 +201,32 @@ transition: color 0.5s;
 z-index:0;
 }
 
+.card__icon-button{
+  min-height:38px;
+  align-self: center;
+  background-color: var(--bg-color);
+  transform: border 0.3s ease;
+  border: none;
+}
+
+.card__icon-button:hover{
+
+}
+.card__icon-button:focus{
+  outline:none;
+}
+
+.card__icon-button:focus-visible{
+  border: 2px solid var(--accent-color);
+}
+
+.card__icon   -button:hover{
+  cursor:pointer;
+}
+
 .card__like-button:hover{
   cursor:pointer;
-  color:var(--bg-color); 
+  color:var(--bg-color);
 }
 
 .card__like-button::after{
