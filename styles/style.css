@@ -68,6 +68,7 @@ text-align: center;
 font-size: 14px;
 position:relative;
 padding-left:0px;
+text-transform: uppercase;
 }
 
 .theme-menu__button:disabled {
@@ -81,7 +82,6 @@ padding-left:0px;
     left: -21px;
     animation: selectedMenu 0.5s ease-in-out infinite;
   }
-  
   
 .theme-menu__button:hover {
   cursor:pointer;
