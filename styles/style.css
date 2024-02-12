@@ -230,6 +230,12 @@ z-index:0;
   cursor:pointer;
 }
 
+.like-icon:hover:active .core {
+  fill:var(--heart-fill);
+}
+.like-icon:hover:active .main-body {
+  fill:var(--heart-fill);
+}
 
 .sparks{
   opacity: 0%;
