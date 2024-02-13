@@ -50,6 +50,7 @@
 }
 .header__subtitle{
   font-size: clamp(0.875rem, 0.3346rem + 2.521vw, 1.4375rem);
+  text-transform: uppercase;
 
 }
 
@@ -210,11 +211,12 @@ z-index:0;
 }
 
 .card__icon-button{
-  min-height:38px;
+  min-height:37px;
   align-self: center;
   background-color: var(--bg-color);
   transform: border 0.3s ease;
   border: none;
+  
 }
 
 .card__icon-button:focus{
