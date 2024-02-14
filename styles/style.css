@@ -209,8 +209,8 @@
   filter: sepia(80%);
 }
 
-.invert {
-  filter: invert(0.7);
+.multipleFilter {
+  filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
 }
 
 .content__card-paragraph {
