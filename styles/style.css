@@ -72,7 +72,6 @@
   text-align: center;
   font-size: 14px;
   position: relative;
-  padding-left: 0px;
   text-transform: uppercase;
 }
 
@@ -84,12 +83,15 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
+  top:0px;
   left: -21px;
   animation: selectedMenu 0.5s ease-in-out infinite;
+  font-size: 14px;
 }
 
 .theme-menu__button:hover {
   cursor: pointer;
+  opacity: 60%;
 }
 
 .theme-menu__button:focus {
@@ -138,7 +140,7 @@
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-weight: var(--card-title-font-weight);
+  font-variation-settings: 'wght' var(--card-title-font-weight);
 }
 
 .content__card-visual {
@@ -166,10 +168,10 @@
     -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
 }
 
-@supports ((-webkit-text-stroke: 1px var(--bg-color))) {
+@supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .content__card-visual-text {
     -webkit-text-stroke: 1px var(--bg-color);
-
+    text-stroke: 1px var(--bg-color);
     text-shadow: none;
   }
 }
@@ -222,7 +224,7 @@
   padding-top: 27px;
   padding-left: 27px;
   padding-right: 25px;
-  font-weight: var(--card-paragraph-font-weight);
+  font-variation-settings : 'wght' var(--card-paragraph-font-weight);
 }
 
 .content__card-like {
@@ -293,6 +295,7 @@
   animation-delay: 0.1s;
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
+  animation-direction: alternate;
 }
 
 .like-icon.is-liked .sparks {
@@ -300,6 +303,7 @@
   animation-delay: 0.3s;
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
+  animation-direction: alternate;
 }
 
 .like-icon.is-liked:hover .main-body {
