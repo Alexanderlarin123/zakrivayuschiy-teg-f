@@ -21,8 +21,8 @@
 
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt/HTML&gt</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <a class="header__title">&lt/HTML&gt</a>
+      <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -71,7 +71,7 @@
           Место для ваших воспоминаний о начале обучения.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -104,7 +104,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -130,7 +130,7 @@
           Место для ваших воспоминаний о начале первого спринта.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -163,7 +163,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -187,7 +187,7 @@
           Место для ваших воспоминаний об окончании первого спринта.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -220,7 +220,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -246,7 +246,7 @@
           Место для ваших воспоминаний о начале второго спринта.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -279,7 +279,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -305,7 +305,7 @@
           Место для ваших воспоминаний об окончании второго спринта.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -338,7 +338,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -362,7 +362,7 @@
           Место для ваших воспоминаний о начале третьего спринта.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -395,7 +395,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -420,7 +420,7 @@
           Место для ваших воспоминаний об окончании третьего спринта.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -453,7 +453,7 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
@@ -481,7 +481,7 @@
           этой точке пути.
         </p>
         <div class="content__card-like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -514,13 +514,12 @@
               ></path>
             </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="card__like-button">
             <p class="button__text">Like</p>
           </button>
         </div>
-      </article>
-    </main>
-    <footer class="footer">
+      </article>   
+    <div class="footer">
       <button
         class="footer__button"
         type="button"
@@ -561,12 +560,13 @@
               продолжить
             </p>
           </div>
-          <form>
+          <form method="dialog">
             <button type="submit" class="save__button">OK</button>
           </form>
         </div>
       </dialog>
-    </footer>
+    </div>
+  </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
