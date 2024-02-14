@@ -14,29 +14,32 @@
 */
 @keyframes selectedMenu {
     0% {
-      left: -21px;
+        left: -21px;
     }
-    100% {
-      left: -17px;
-    }
-  } 
 
-  @keyframes heartScale {
+    100% {
+        left: -17px;
+    }
+}
+
+@keyframes heartScale {
     0% {
         transform-origin: center;
         transform: scale(1);
     }
+
     100% {
         transform-origin: center;
         transform: scale(1.5);
     }
-  } 
+}
 
-  @keyframes sparks {
+@keyframes sparks {
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
-  } 
+}
