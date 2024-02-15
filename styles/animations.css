@@ -12,6 +12,17 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.theme-menu__button:disabled::before {
+    content: "▶";
+    position: absolute;
+    top: 0px;
+    left: -21px;
+    animation: selectedMenu 0.5s ease-in-out infinite;  
+    animation-direction: alternate;
+    font-size: 14px;
+  }
+
 .like-icon.is-liked .core {
   fill: var(--heart-fill);
   transition: fill 0.3 linear;
