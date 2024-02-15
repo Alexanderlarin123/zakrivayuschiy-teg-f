@@ -231,7 +231,7 @@
   width: 100%;
   padding-top: 24px;
   padding-right: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   display: inline-flex;
   justify-content: end;
   align-items: center;
@@ -294,12 +294,12 @@
 }
 
 
-.card__icon-button {
-  min-height: 37px;
+.card__icon-button {  
   align-self: center;
   background-color: var(--bg-color);
   transform: border 0.3s ease;
   border: none;
+  height: 37px;;
 }
 
 .card__icon-button:focus {
@@ -310,47 +310,6 @@
   border: 2px solid var(--accent-color);
 }
 
-.like-icon.is-liked .core {
-  fill: var(--heart-fill);
-  transition: fill 0.3 linear;
-  transition-delay: 0s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-fill);
-  transition: fill 0.3 linear;
-  transition-delay: 0.03s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-fill);
-  transition: fill 0.3 linear;
-  transition-delay: 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  animation-name: heartScale;
-  animation-delay: 0.1s;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation-name: sparks;
-  animation-delay: 0.3s;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
-}
-
-.like-icon.is-liked:hover .main-body {
-  fill: var(--heart-fill);
-}
-
-.like-icon.is-liked:hover .core {
-  fill: var(--heart-fill);
-}
 
 .like-icon:hover {
   cursor: pointer;
@@ -391,7 +350,6 @@
 }
 
 .footer {
-  margin-top: 50px;
   margin-bottom: 100px;
   padding: 0px;
 }
@@ -418,23 +376,24 @@ dialog {
   inset: 0;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
-  padding: 30px 40px 30px 40px;
+  padding: 30px;
   font-family: var(--accent-font);
   color: var(--accent-color);
   font-size: 14px;
+  min-width: 353px;
 }
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.dialog {
+
+.dialog-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   gap: 30px;
-  min-width: 293px;
 }
 
 .dialog__info {
@@ -448,6 +407,7 @@ dialog::backdrop {
 }
 
 .save__button {
+  
   width: 100%;
   padding: 10px 17px 10px 17px;
 }
@@ -458,13 +418,13 @@ dialog::backdrop {
     flex-direction: column;
   }
 
-  dialog {
-    padding: 30px;
-  }
-
   .footer-button-icon {
     width: 28px;
     height: 28px;
   }
-
+  dialog{
+    padding: 30px 40px 30px 40px;
+    min-width: 341px;
+  }  
+ 
 }
