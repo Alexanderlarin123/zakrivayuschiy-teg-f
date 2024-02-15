@@ -417,8 +417,7 @@ dialog::backdrop {
   .footer__button {
     flex-direction: column;
   }
-
-  .footer-button-icon {
+  .footer__button-icon {
     width: 28px;
     height: 28px;
   }
