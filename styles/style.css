@@ -28,7 +28,7 @@
   background-size: cover;
   color: var(--accent-color);
   background-color: var(--bg-color);
-  font-variation-settings: "wgth" var(--card-paragraph-font-weight);
+  font-variation-settings: "wght" var(--card-paragraph-font-weight);
 }
 
 .header {
