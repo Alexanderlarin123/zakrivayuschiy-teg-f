@@ -63,7 +63,7 @@
   flex-direction: column;
   gap: 8px;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .theme-menu__button {
@@ -138,6 +138,7 @@
   width: 100%;
   font-size: var(--main-font-size);
   padding-left: 10px;
+  padding-right:10px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-variation-settings: "wght" var(--card-title-font-weight);
@@ -408,7 +409,7 @@ dialog::backdrop {
   padding: 10px 17px 10px 17px;
 }
 
-@media (width < 375px) {
+@media (width <= 375px) {
   .footer__button {
     flex-direction: column;
   }
@@ -419,5 +420,11 @@ dialog::backdrop {
   dialog {
     padding: 30px 40px 30px 40px;
     min-width: 341px;
+  }
+  .header{
+    padding-top:122px;
+  }
+  .content__card-visual-text {
+    padding-right:13px;
   }
 }
