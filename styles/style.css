@@ -80,7 +80,6 @@
   opacity: 60%;
 }
 
-
 .theme-menu__button:hover {
   cursor: pointer;
   opacity: 60%;
@@ -130,7 +129,7 @@
   width: 100%;
   font-size: var(--main-font-size);
   padding-left: 10px;
-  padding-right:10px;
+  padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-variation-settings: "wght" var(--card-title-font-weight);
@@ -298,7 +297,7 @@
   outline-color: transparent;
   transition: outline-color 0.3s ease;
   padding-inline: 0;
-} 
+}
 
 .like-icon-button:focus {
   outline: none;
@@ -306,7 +305,6 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  
 }
 
 .like-icon:hover {
@@ -404,8 +402,8 @@ dialog::backdrop {
 
 .dialog__save-icon {
   fill: var(--accent-color);
-  width:39px;
-  height:39px;
+  width: 39px;
+  height: 39px;
 }
 
 .save__button {
@@ -417,18 +415,20 @@ dialog::backdrop {
   .footer__button {
     flex-direction: column;
   }
+
   .footer__button-icon {
     width: 28px;
     height: 28px;
   }
+
   dialog {
     padding: 30px 40px 30px 40px;
     min-width: 341px;
   }
-  .header{
-    padding-top:122px;
+  .header {
+    padding-top: 122px;
   }
   .content__card-visual-text {
-    padding-right:13px;
+    padding-right: 13px;
   }
 }
