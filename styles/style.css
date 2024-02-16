@@ -228,9 +228,9 @@
   background-color: var(--bg-color);
   z-index: 0;
   box-shadow:none;
- 
-  
+  transition: box-shadow 0.3s ease; 
 }
+
 .button:hover {
   cursor: pointer;
 }
@@ -258,32 +258,6 @@
 .card__like-button {
   min-width: 130px;
   min-height: 38px;
-}
-
-
-
-.like-icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
-}
-
-.like-icon:hover {
-  cursor: pointer;
-}
-
-.like-icon:hover:active .core {
-  fill: var(--heart-fill);
-}
-
-.like-icon:hover:active .main-body {
-  fill: var(--heart-fill);
-}
-
-.sparks {
-  opacity: 0%;
 }
 
 
