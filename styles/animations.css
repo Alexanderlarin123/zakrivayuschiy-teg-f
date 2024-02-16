@@ -20,7 +20,7 @@
     left: -21px;
     animation-name: selectedMenu;
     animation-duration: 0.5s;
-    animation-timing-function:ease-in-out; 
+    animation-timing-function: ease-in-out; 
     animation-iteration-count: infinite;
     animation-direction: alternate;
     font-size: 14px;
