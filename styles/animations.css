@@ -18,7 +18,10 @@
     position: absolute;
     top: 0px;
     left: -21px;
-    animation: selectedMenu 0.5s ease-in-out infinite;  
+    animation-name: selectedMenu;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out; 
+    animation-iteration-count: infinite;
     animation-direction: alternate;
     font-size: 14px;
   }
