@@ -13,6 +13,18 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.theme-menu__button {
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+    opacity: 100%;
+    transition: opacity 0.3s linear;
+  }
+
+  
 .theme-menu__button:disabled::before {
     content: "▶";
     position: absolute;
@@ -26,6 +38,44 @@
     font-size: 14px;
   }
 
+  .theme-menu__button::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s;
+    transition-timing-function: ease;
+  }
+
+  
+.button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--accent-color);
+    transition: width 0.5s ease-in-out;
+    z-index: -1;
+  }
+
+  .card__icon-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    border: none;
+    min-height: 32px;
+    outline-color: transparent;
+    transition: outline-color 0.3s ease;
+    padding-inline: 0;
+  }
+
 .like-icon.is-liked .core {
   fill: var(--heart-fill);
   transition: fill 0.3 linear;
@@ -35,7 +85,7 @@
 .like-icon.is-liked .main-body {
   fill: var(--heart-fill);
   transition: fill 0.3 linear;
-  transition-delay: 0.03s;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
@@ -59,6 +109,30 @@
   animation-timing-function: ease-in;
   animation-direction: alternate;
 }
+
+.core {
+    fill: var(--bg-color);
+    transition: fill 0.3s linear;
+    transition-delay: 0.03s;
+  }
+  
+  .like-icon:hover .core {
+    fill: var(--heart-contour);
+    transition-delay: 0s;
+  }
+  
+  .main-body {
+    fill: var(--bg-color);
+    transition: fill 0.3s linear;
+    transition-delay: 0s;
+  }
+  
+  .like-icon:hover .main-body {
+    fill: var(--heart-contour);
+    transition-delay: 0.05s;
+  }
+  
+
 
 @keyframes selectedMenu {
   0% {

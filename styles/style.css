@@ -66,14 +66,6 @@
   padding-left: 25px;
 }
 
-.theme-menu__button {
-  border: none;
-  background: none;
-  text-align: center;
-  font-size: 14px;
-  position: relative;
-  text-transform: uppercase;
-}
 
 .theme-menu__button:disabled {
   pointer-events: none;
@@ -93,16 +85,7 @@
   opacity: 60%;
 }
 
-.theme-menu__button::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  margin-top: 2px;
-  background-color: var(--accent-color);
-  transition: width 0.3s;
-  transition-timing-function: ease;
-}
+
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
@@ -174,6 +157,8 @@
   width: 100%;
   grid-row: 1;
   grid-column: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .bright {
@@ -242,23 +227,12 @@
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   z-index: 0;
+  box-shadow:none;
+ 
+  
 }
 .button:hover {
   cursor: pointer;
-  color: var(--bg-color);
-}
-
-.button::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: 100%;
-  background-color: var(--accent-color);
-  transition: width 0.5s;
-  z-index: -1;
 }
 
 .button:hover::after {
@@ -286,18 +260,7 @@
   min-height: 38px;
 }
 
-.card__icon-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-color);
-  border: none;
-  min-height: 32px;
-  outline-color: transparent;
-  transition: outline-color 0.3s ease;
-  padding-inline: 0;
-}
+
 
 .like-icon-button:focus {
   outline: none;
@@ -323,27 +286,6 @@
   opacity: 0%;
 }
 
-.core {
-  fill: var(--bg-color);
-  transition: fill 0.3s linear;
-  transition-delay: 0.03s;
-}
-
-.like-icon:hover .core {
-  fill: var(--heart-contour);
-  transition-delay: 0s;
-}
-
-.main-body {
-  fill: var(--bg-color);
-  transition: fill 0.3s linear;
-  transition-delay: 0s;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--heart-contour);
-  transition-delay: 0.05s;
-}
 
 .footer {
   margin-bottom: 100px;
@@ -405,6 +347,9 @@ dialog::backdrop {
   width: 39px;
   height: 39px;
 }
+.dialog__paragraph {
+  max-width: 234px;
+}
 
 .save__button {
   width: 100%;
@@ -430,5 +375,8 @@ dialog::backdrop {
   }
   .content__card-visual-text {
     padding-right: 13px;
+  }
+  .dialog__paragraph {
+    max-width: 198px;
   }
 }
