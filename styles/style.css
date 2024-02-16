@@ -230,7 +230,7 @@
   display: inline-flex;
   justify-content: end;
   align-items: center;
-  gap: 2px;
+  gap: 10px;
 }
 
 .like-icon {
@@ -293,10 +293,12 @@
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
-  transform: border 0.3s ease;
   border: none;
   min-height: 32px;
-}
+  outline-color: transparent;
+  transition: outline-color 0.3s ease;
+  padding-inline: 0;
+} 
 
 .like-icon-button:focus {
   outline: none;
@@ -304,6 +306,7 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
+  
 }
 
 .like-icon:hover {
@@ -397,6 +400,12 @@ dialog::backdrop {
   line-height: 21px;
   text-transform: uppercase;
   gap: 15px;
+}
+
+.dialog__save-icon {
+  fill: var(--accent-color);
+  width:39px;
+  height:39px;
 }
 
 .save__button {
