@@ -39,15 +39,17 @@
   padding-top: 138px;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
-  padding-bottom: 17px;
-  gap: 15px;
+  padding-bottom: 19px;
+  gap: 19px;
   width: var(--content-width);
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .header__title {
-  font-size: clamp(3.0625rem, 2.1017rem + 4.4818vw, 4.0625rem);
+  font-size: clamp(3.0625rem, 2.0017rem + 4.4818vw, 4.0625rem);
+  font-weight: 400;
+  line-height: 65px;
 }
 .header__title:focus {
   outline: none;
@@ -55,15 +57,17 @@
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.3346rem + 2.521vw, 1.4375rem);
+  line-height: 23px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-top: 10px;
-  padding-left: 25px;
+  gap: 7px;
+  padding-top: 3px;
+  padding-left: 20px;
 }
 
 
